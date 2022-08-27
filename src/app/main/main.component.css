@@ -1,0 +1,19 @@
+.d1{
+    margin-top:2% ;
+}
+.d2{
+    width: 100%;
+    margin-top:2% ;
+}
+.d3{
+    border: solid 1px black;
+    border-radius: 10px;
+}
+.c1{
+    margin-top: 2%;
+}
+.card-img-top{
+    border-radius: 250px;
+    width: 150px;
+    margin-left: 50px;
+}
