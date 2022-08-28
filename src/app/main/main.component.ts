@@ -10,6 +10,7 @@ import { ServiceService } from "../service/service.service";
 export class MainComponent implements OnInit {
 
   data: any
+  comment:any
   constructor(private ds: ServiceService,private fb:FormBuilder) { }
 
   ngOnInit(): void {
@@ -21,6 +22,11 @@ export class MainComponent implements OnInit {
         this.data=response
       });
 
+
+      this.ds.comments()
+      .subscribe((response:any)=>{
+        this.comment=response
+      })
     
   }
 }

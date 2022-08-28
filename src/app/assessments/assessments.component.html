@@ -1,0 +1,36 @@
+<mat-tab-group>
+    <mat-tab label="Assessments">
+        <mat-accordion>
+            <mat-expansion-panel hideToggle *ngFor="let i of assess">
+                <mat-expansion-panel-header>
+                    <mat-panel-title>
+                        <strong style="color:rgb(113, 113, 143) ;">{{i.stage_name}}</strong>
+                    </mat-panel-title>
+                    <mat-panel-description>
+                        <p>{{i.status}}</p>
+                    </mat-panel-description>
+                </mat-expansion-panel-header>              
+                <div class="row">
+                    <div class="col"><p><strong>Time slot </strong></p>
+                        <p>{{i.time}}</p></div>
+                    <div class="col"><p><strong>Venue </strong></p>
+                        <p>{{i.venue}}</p></div>
+                    <div class="col"></div>
+                </div>
+            </mat-expansion-panel>
+        </mat-accordion>
+    </mat-tab>
+    <mat-tab label="Chatbot Response"><mat-list role="list">
+        <h1><strong>Job Application Bot</strong></h1>
+        <mat-card *ngFor="let i of chat">
+            <mat-card-title><h2>{{i.question}}?</h2></mat-card-title>
+            <mat-card-content><p>{{i.answer}}</p></mat-card-content>
+          </mat-card>
+      </mat-list></mat-tab>
+    <mat-tab label="Feedbacks"> Content 3 </mat-tab>
+    <mat-tab label="Reminders"> Content 3 </mat-tab>
+
+</mat-tab-group>
+
+
+
