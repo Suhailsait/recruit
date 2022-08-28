@@ -65,11 +65,13 @@
         </div>
         <h4 style="color: #6C757D; margin-top: 10%;">COMMENTS</h4>
 
-        <div style="margin-top:10% ;border: 0.01px solid rgb(128, 124, 124);     border-radius: 10px;">
+        <div style="margin-top:10% ;border: 0.01px solid rgb(128, 124, 124);border-radius: 10px;">
             
-                <h4 class="ms-3 mt-3"><strong>{{comment[0].name}}</strong></h4>
-                <p class="ms-3 mb-3">{{comment[0].comment}}</p>
-              
+              <div *ngFor="let i of comment">
+                <h4 class="ms-3 mt-3"><strong>{{i.name}}</strong></h4>
+                <p class="ms-3 mb-3">{{i.comment}}</p>
+
+              </div>
               
         </div>
     </div>
