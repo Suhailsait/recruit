@@ -6,14 +6,40 @@
     margin-top:2% ;
 }
 .d3{
-    border: solid 1px black;
-    border-radius: 10px;
+    border: 0.01px solid rgb(128, 124, 124);
+    border-radius: 4px;
 }
 .c1{
     margin-top: 2%;
 }
-.card-img-top{
-    border-radius: 250px;
-    width: 150px;
-    margin-left: 50px;
-}
+
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  .nav{
+    height: 50px;
+  }
+  .img1{
+    border-radius:250px ;
+    width:45% ;
+    margin-left: 13%;
+    border: 4px solid rgb(219, 202, 207);
+  }
+  .example-card{
+    border: 0.01px solid rgb(128, 124, 124);
+    margin-left: 2%;
+    height: 370px;
+  }
+  .list1{
+    font-size:small;
+  }
+  .example-section {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    height: 60px;
+  }
+  
+  .example-margin {
+    margin: 0 10px;
+  }
